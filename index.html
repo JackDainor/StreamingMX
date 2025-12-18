@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Tienda Demo</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>Tienda de Ropa</h1>
+
+<div class="products">
+  <div class="product">
+    <h3>Camiseta Negra</h3>
+    <p>Precio: 50 Bs</p>
+    <button onclick="openForm('Camiseta Negra', 50)">Comprar</button>
+  </div>
+
+  <div class="product">
+    <h3>Vestido Rojo</h3>
+    <p>Precio: 120 Bs</p>
+    <button onclick="openForm('Vestido Rojo', 120)">Comprar</button>
+  </div>
+
+  <div class="product">
+    <h3>Jeans Azul</h3>
+    <p>Precio: 150 Bs</p>
+    <button onclick="openForm('Jeans Azul', 150)">Comprar</button>
+  </div>
+</div>
+
+<!-- FORMULARIO -->
+<div id="formModal" class="modal">
+  <div class="modal-content">
+    <h2>Solicitud de compra</h2>
+
+    <input type="text" id="cliente" placeholder="Tu nombre">
+    <input type="text" id="whatsapp" placeholder="WhatsApp">
+
+    <button onclick="enviarPedido()">Enviar pedido</button>
+    <span class="close" onclick="closeForm()">✖</span>
+  </div>
+</div>
+
+
+
+<script type="module">
+  // Import the functions you need from the SDKs you need
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/12.7.0/firebase-app.js";
+  // TODO: Add SDKs for Firebase products that you want to use
+  // https://firebase.google.com/docs/web/setup#available-libraries
+
+  // Your web app's Firebase configuration
+  const firebaseConfig = {
+    apiKey: "AIzaSyCEh6MU1Wzf-Ibi77B7OMFqNrw4_Keq2aw",
+    authDomain: "tienda-demo-7e4b1.firebaseapp.com",
+    projectId: "tienda-demo-7e4b1",
+    storageBucket: "tienda-demo-7e4b1.firebasestorage.app",
+    messagingSenderId: "964925748960",
+    appId: "1:964925748960:web:3bbbd7077e141b09360285"
+  };
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+</script>
+
+<script src="script.js"></script>
+</body>
+</html>
+  

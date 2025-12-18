@@ -1,0 +1,56 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #0e0e0e;
+  color: white;
+  text-align: center;
+}
+
+.products {
+  display: grid;
+  gap: 20px;
+  padding: 20px;
+}
+
+.product {
+  background: #1c1c1c;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+button {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 6px;
+  background: #00e5ff;
+  cursor: pointer;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,.7);
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background: #111;
+  padding: 20px;
+  border-radius: 10px;
+  position: relative;
+}
+
+.modal input {
+  display: block;
+  width: 100%;
+  margin: 10px 0;
+  padding: 8px;
+}
+
+.close {
+  position: absolute;
+  top: 8px;
+  right: 10px;
+  cursor: pointer;
+}
