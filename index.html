@@ -774,7 +774,7 @@
 📧 *Email:* ${email}
 
 🛒 *PRODUCTO SELECCIONADO:*
-${currentSingleProduct.logo} ${currentSingleProduct.name}
+${currentSingleProduct.name}
 💰 Precio: $${currentSingleProduct.price.toLocaleString('es-MX')} MXN
 
 ━━━━━━━━━━━━━━━━━━━━━
@@ -806,7 +806,7 @@ ${currentSingleProduct.logo} ${currentSingleProduct.name}
                 const discount = cart.length >= 3 ? subtotal * 0.05 : 0;
                 const total = subtotal - discount;
                 
-                const productsList = cart.map(item => `${item.logo} ${item.name} ($${item.price})`).join('\n');
+                const productsList = cart.map(item => `${item.name} ($${item.price})`).join('\n');
                 
                 const message = `🎉 *NUEVA COMPRA CARRITO - STREAMING PREMIUM MX* 🎉
 
